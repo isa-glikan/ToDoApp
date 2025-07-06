@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_gragh">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_gragh"
+    app:startDestination="@id/addTask1">
+    <fragment
+        android:id="@+id/addTask1"
+        android:name="com.example.todoapp.AddTask"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task" />
+    <fragment
+        android:id="@+id/curennetTodos"
+        android:name="com.example.todoapp.curennetTodos"
+        android:label="fragment_curennet_todos"
+        tools:layout="@layout/fragment_curennet_todos" >
+        <action
+            android:id="@+id/action_curennetTodos_to_addTask1"
+            app:destination="@id/addTask1" />
+    </fragment>
 </navigation>
