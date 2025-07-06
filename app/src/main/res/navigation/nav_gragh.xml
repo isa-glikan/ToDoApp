@@ -6,12 +6,12 @@
     app:startDestination="@id/addTask1">
     <fragment
         android:id="@+id/addTask1"
-        android:name="com.example.todoapp.AddTask"
+        android:name="com.example.todoapp.fragment.AddTask"
         android:label="fragment_add_task"
         tools:layout="@layout/fragment_add_task" />
     <fragment
         android:id="@+id/curennetTodos"
-        android:name="com.example.todoapp.curennetTodos"
+        android:name="com.example.todoapp.fragment.curennetTodos"
         android:label="fragment_curennet_todos"
         tools:layout="@layout/fragment_curennet_todos" >
         <action
