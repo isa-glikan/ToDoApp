@@ -11,7 +11,6 @@ import androidx.compose.ui.graphics.findFirstRoot
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todoapp.R
 import com.example.todoapp.model.TOdo
-
 class TodoAdaptor(var todoList:MutableList<TOdo>,var context: Context):
     RecyclerView.Adapter<TodoAdaptor.ViweHolder>() {
 
@@ -41,6 +40,7 @@ class TodoAdaptor(var todoList:MutableList<TOdo>,var context: Context):
             titelTB.text=todoList[position].titel
             descriptoinTB.text=todoList[position].description
             dateTB.text=todoList[position].date
+            timeTB.text=todoList[position].time
             isDonTB.isChecked=todoList[position].isDON
         }
     }
