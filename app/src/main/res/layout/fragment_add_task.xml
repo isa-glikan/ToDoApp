@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="10dp"
-    android:background="#5503F4A0"
+    android:layout_marginTop="15dp"
+    android:background="#50E2F4"
+    android:backgroundTint="#50E2F4"
     android:orientation="vertical"
     tools:context=".fragment.AddTask">
 
@@ -33,9 +34,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/titelEditeTXT"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="61dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp" />
+            android:layout_marginTop="20dp"
+            android:textColor="#0D0D0D" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -64,6 +66,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:lines="4"
+            android:textColor="#050505"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -101,17 +104,18 @@
             android:clickable="true"
             android:focusable="false"
             android:lines="2"
+            android:textColor="#0B0A0A"
             tools:ignore="SpeakableTextPresentCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/addTaskBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:background="#4CAF50"
         android:shadowColor="#3F51B5"
         android:text="ADD TASK"
@@ -119,6 +123,7 @@
         android:textColorHighlight="#3F51B5"
         android:textColorHint="#3F51B5"
         android:textColorLink="#365C7A"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:cornerRadius="25dp" />
 
 </LinearLayout>
