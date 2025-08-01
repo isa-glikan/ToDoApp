@@ -36,7 +36,7 @@ class Picker(var fragmentManager: FragmentManager,private var editText: EditText
         datepicker.show(fragmentManager, "datePickerInAddTask")
 
         datepicker.addOnPositiveButtonClickListener {
-            val outpDateFormat = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
+            val outpDateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
             outpDateFormat.timeZone = TimeZone.getTimeZone("UTC")
             fullDate = outpDateFormat.format(it)
             makeTimePiker()
